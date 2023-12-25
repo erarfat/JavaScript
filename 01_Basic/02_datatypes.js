@@ -10,5 +10,7 @@
 //  String=""
 //  Boolean
 //  null is Object
+// Symbol
+// undefine
  console.log(typeof null);
  console.log(typeof undefined);
