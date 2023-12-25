@@ -12,5 +12,5 @@
 //  null is Object
 // Symbol
 // undefine
- console.log(typeof null);
+ console.log(typeof null); //interview
  console.log(typeof undefined);
