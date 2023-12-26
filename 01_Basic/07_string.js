@@ -77,6 +77,92 @@ console.log(indexOfSecond);
 
 // match() use regular exp
 
+//The padEnd() method of String values pads this string with a given string (repeated, if needed) so that the resulting string reaches a given length. The padding is applied from the end of this string.
+
+console.log("abc".padEnd(10));// "abc       "
+// 10 -abc= 7 will append
+console.log("abc".padEnd(10,"ar")); 
+
+//The slice() method of String values extracts a section of this string and returns it as a new string, without modifying the original string.
+
+console.log(sentence.slice(3)); //from front
+
+console.log(sentence.slice(-4)); // from back
+
+console.log(sentence.slice(-7,-5)); //range
+
+// The padStart() method of String values pads this string with another string (multiple times, if needed) until the resulting string reaches the given length. The padding is applied from the start of this string.
+
+const mobileNumber="123456789"
+const endTwoDigit=mobileNumber.slice(-2)
+const hiddenNumber=endTwoDigit.padStart(mobileNumber.length,'*')
+
+console.log(`The Otp is send at this number ${hiddenNumber}`);
+
+// note padStart(),padEnd() mai value include hogi
+
+//The String.raw() static method is a tag function of template literals. This is similar to the r prefix in Python, or the @ prefix in C# for string literals. It's used to get the raw string form of template literals — that is, substitutions (e.g. ${foo}) are processed, but escape sequences (e.g. \n) are not.
+//use for / and //
+
+console.log(String.raw`C\\windows`); // agar raw nahi liye to // escape hoga
+
+//The repeat() method of String values constructs and returns a new string which contains the specified number of copies of this string, concatenated together.
+
+console.log("Welcome! ".repeat(3));
+
+//The replace() method of String values returns a new string with one, some, or all matches of a pattern replaced by a replacement. The pattern can be a string or a RegExp, and the replacement can be a string or a function called for each match. If pattern is a string, only the first occurrence will be replaced. The original string is left unchanged.
+
+console.log(sentence.replace("Khan" , "Shaikh"));
+
+//The replaceAll() method of String values returns a new string with all matches of a pattern replaced by a replacement. The pattern can be a string or a RegExp, and the replacement can be a string or a function to be called for each match. The original string is left unchanged.
+
+console.log(sentenceOne.replaceAll("Khan", "Shaikh"));
+
+//note slice mai start and end dena hai but in subString mai nahi dena hai
+
+
+//The split() method of String values takes a pattern and divides this string into an ordered list of substrings by searching for the pattern, puts these substrings into an array, and returns the array.
+
+console.log(sentence.split(' '));
+
+//The startsWith() method of String values determines whether this string begins with the characters of a specified string, returning true or false as appropriate.
+
+//startsWith(searchString)
+//startsWith(searchString, position)
+
+console.log(sentence.startsWith("My"));
+console.log(sentence.startsWith("My" , 3));
+
+console.log(sentence.startsWith("is", 3));
+console.log(sentence.startsWith("name", 3));
+
+// The substring() method of String values returns the part of this string from the start index up to and excluding the end index, or to the end of the string if no end index is supplied.
+
+console.log(sentenceOne.substring(0,sentenceOne.length-5));
+
+// The toLocaleLowerCase() method of String values returns this string converted to lower case, according to any locale-specific case mappings.
+
+const dotted = 'İstanbul';
+
+console.log(`EN-US: ${dotted.toLocaleLowerCase('en-US')}`);
+// Expected output: "i̇stanbul"
+
+console.log(`TR: ${dotted.toLocaleLowerCase('tr')}`);
+// Expected output: "istanbul"
+
+// The toString() method of String values returns this string value.
+
+const objectOfString = new String("Shaikh")
+console.log(objectOfString);// "Shaikh" it is object
+console.log(objectOfString.toString());// String hai
+
+// The trim() method of String values removes whitespace from both ends of this string and returns a new string, without modifying the original string.
+
+// To return a new string with whitespace trimmed from just one end, use trimStart() or trimEnd().
+
+const withWhiteSpace="    Khan   "
+console.log(withWhiteSpace.trim());
+
 
 
 
