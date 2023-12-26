@@ -17,4 +17,7 @@ console.log(hund.toLocaleString('en-IN')); // add coma
 console.log(Math.random());
 
 // some if we want in range then
+const min = 10
+const max = 20
 
+console.log(Math.floor(Math.random() * (max-min+1))+min);
