@@ -1,4 +1,4 @@
-// Primitive data types
+// Primitive data types copy bana ta  hai
 // 7 ==> string number boolean null symbol undefine BigInt
 // symbole id ko unqiue identify ke liye hai
 const id = Symbol("123")

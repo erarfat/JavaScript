@@ -85,9 +85,9 @@ console.log("abc".padEnd(10,"ar"));
 
 //The slice() method of String values extracts a section of this string and returns it as a new string, without modifying the original string.
 
-console.log(sentence.slice(3)); //from front
+console.log(sentence.slice(3)); //from front index is zero
 
-console.log(sentence.slice(-4)); // from back
+console.log(sentence.slice(-4)); // from back index is 1
 
 console.log(sentence.slice(-7,-5)); //range
 
