@@ -21,6 +21,10 @@ const myObj ={
     }
 }
 
+// optiomal chaining ? fullname present hai ki nahi
+
+console.log(myObj.fullname?.username.firstname);
+
 // how to access it
 console.log(myObj.fullname.username.firstname);
 
@@ -83,6 +87,26 @@ console.log(Object.entries(myObj));// imp check
 console.log(myObj.hasOwnProperty('isLoggedIn'));
 
 console.log(secondObject.hasOwnProperty('loggedIn'));
+
+
+
+//=======> de structure and api 
+
+const lastObj ={
+    name: "Arfta",
+    email: "sk@gmail.com"
+}
+
+// suppose agar meko lastObj ka name use karna hai to mai lastObj.name karung wo to bohot bara hai and always use objectname.something iskeliye desructure use karte hai
+
+const {name} = lastObj // use name 
+console.log(name);
+
+//const {email, e} = lastObj //  wrong
+
+const {email: e} = lastObj
+
+console.log(e);
 
 
 
