@@ -75,7 +75,7 @@ console.log(jsUser.greeting());
 
 jsUser.twoGreeting = function(){
     console.log(`The user name is ${this.name}` );
-}
+} // note jsuser se pahile const nahi hai
 
 console.log(jsUser.twoGreeting());
 
