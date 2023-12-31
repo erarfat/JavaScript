@@ -10,6 +10,7 @@
 // now same thing using iife
 
 (function dbConnection(){
+    // named iife hai 
     console.log("DB Connectted");
 })(); // ; is very imp ye invoke to hogay hai but usko rokna kha hai ye pata nahi
 
