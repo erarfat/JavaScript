@@ -22,7 +22,8 @@ const myObj  = {
 
 // now for global what happen check
 
-console.log(this); // empty object
+console.log(this); // empty object 
+//interveiw mai v8 engin ka global object  bola to windows hai
 
 // agar yahi cheez browser ke console mai kiye to empty obj ki jaga windows dega interview
 
