@@ -13,7 +13,7 @@ const secondArr = [7,8,9,10]
 
 // concate ... use karke bhi hota hai called seprate operater
 
-// const thirdArray = [...firstArr, ...secondArr]
+// const thirdArray = [...firstArr, ...secondArr] imp
 // console.log(thirdArray);
 // console.log(thirdArray[thirdArray.length-1]);
 
@@ -30,7 +30,7 @@ console.log(Array.isArray("Arfat")); //flase
 
 //converting any data types to array
 
-console.log(Array.from("Arfat"));
+console.log(Array.from("Arfat"));//
 
 // same thing using object interview topic
 

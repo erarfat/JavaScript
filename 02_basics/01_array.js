@@ -24,6 +24,8 @@ console.log(arrM1.includes(2)); //boolean
 console.log(arrM1.indexOf(9)); // integer
 
 const arrToString = arrM1.join()
+// join using parameter
+const arr1ToString = arrM1.join('=')
 console.log(arrToString);
 console.log(typeof arrToString);
 

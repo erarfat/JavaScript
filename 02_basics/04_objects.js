@@ -108,6 +108,14 @@ const {email: e} = lastObj
 
 console.log(e);
 
+/// ====> Json is object hai
+// {
+//     uri: ""
+
+// }
+
+
+
 
 
 
