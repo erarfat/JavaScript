@@ -1,4 +1,4 @@
-// for of loop
+// for of loop gives value
 
 // for (const iterator of object) {
     
