@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    // function insertLanguge(lang){
+    //    const li = document.createElement('li')
+    //    li.innerHTML=`${lang}`
+    //    document.querySelector('ul').appendChild(li)
+    // }
+    // insertLanguge("python")
+    
+    function insertLanguge(lang){ // optimized
+       const li = document.createElement('li')
+       li.appendChild(document.createTextNode(lang))
+       document.querySelector('ul').appendChild(li)
+    }
+    insertLanguge("java")
+    insertLanguge('golang')
+
+    //edit
+    const second = document.querySelector('li:nth-child(2)')
+    //second.innerHTML="Arfat"  method 1
+    const newli = document.createElement('li')
+    newli.appendChild( document.createTextNode("Arfat Shaikh"))
+    second.replaceWith(newli) // optimized method 2
+    const first = document.querySelector('li:first-child')
+    first.outerHTML="<li>JAVA</li>" //ye html lagana zaruri hai
+
+    //remove
+
+    const last = document.querySelector('li:last-child')
+    last.remove()
+
+</script>
+</html>
