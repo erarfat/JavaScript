@@ -1,0 +1,5 @@
+console.log(window) // show windows
+console.log(window.document)
+console.log(document.links)
+documnet.getElementByID("id").innerHTML = "Arfat"
+
