@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "div_item" // class to common hai
+    div.id = "ids" // id bhi common hai
+    // but agar kuch or dena hai to set use karo
+
+    div.setAttribute('title', 'Arfat')
+    // div.innerHTML="Arfat" // ye do trip lega 1st laneki second usko replace ki
+    // now same thing using node
+    const text = document.createTextNode("Arfat Shaikh")
+    div.appendChild(text)
+
+    document.body.appendChild(div)
+
+    const add = (tag,write,color) => {
+        const tags = document.createElement(`${tag}`)
+        const text = document.createTextNode(`${write}`)
+        tags.style.color=`${color}`;
+        tags.appendChild(text)
+        document.body.appendChild(tags)
+    }
+
+    const color = ['red', 'green','orange']
+    const tag  = ['div', 'h1', 'p']
+    const wr = ['Arfat', 'Shaikh', 'Khan']
+
+    for (let i = 0; i < wr.length; i++) {
+        add(tag[i],wr[i],color[i])  
+    }
+    
+
+
+
+</script>
+</html>
