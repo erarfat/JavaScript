@@ -87,9 +87,37 @@
     //     console.log("google is clicked ");
     //     e.preventDefault()
     // },false)
-
     
+    // now deleting the images 
 
+    //target kis pe clicke hu hai usko tag bataye ga
+    // parentNode target ka parent bataye ga
+    // tageName tage name de ga 
+
+    // document.querySelector('#images').addEventListener('click', (e) => {
+    //     console.log(e.target.parentNode);
+    //     // to remove ther is two method
+    //     // 1st method
+    //     let removeIt = e.target.parentNode
+    //     removeIt.remove()
+    //     //2nd method parent ka parent lega is me image fir usko child lega
+    //     // removeIt.parentNode.removeChild(removeIt) 
+
+ 
+    // } ) is mai google pe click kiye to all delete hojaraha hai because of parent node google ka parent node image div hai niche solution hai
+
+    document.querySelector('#images').addEventListener('click', (e) => {
+        console.log(e.target.tagName);
+        if(e.target.tagName === 'IMG'){
+            let removeIt = e.target.parentNode
+            removeIt.remove()
+        }
+        else{
+            alert('Note an image')
+        }
+    } )
+
+    // event is vvvvvimp for interview 
 
 
 </script>
