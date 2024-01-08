@@ -1,0 +1,32 @@
+function colorGenrate(){
+  let hexa = '0123456789ABCDEF'
+  let color = '#'
+  for(let i=0 ;i<6 ;i++){
+    let random = Math.floor(Math.random()*16)
+    color += hexa[random]
+  }
+  return color;
+}
+// const re=colorGenrate()
+// console.log(re)
+let toStoreInterval
+function colorChange(){
+
+  if(!toStoreInterval){
+    toStoreInterval = setInterval( color ,1000)
+    // condition double click pe pata chalega matlab agar ye condition hata diya to double click pe stop nahi hoga
+  }
+  function color (){
+    console.log("Check")
+     document.body.style.backgroundColor = `${colorGenrate()}`
+  }
+
+}
+document.getElementById('start').addEventListener('click', (e) => {
+  colorChange()
+})
+
+document.getElementById('stop').addEventListener('click', (e) => {
+  clearInterval(toStoreInterval)
+  toStoreInterval=null // best parctice
+})
