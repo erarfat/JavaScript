@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval</title>
+</head>
+<body>
+    <h2>setInterval</h2>
+    <button id="start">start</button>
+    <button id="but">stop</button>
+</body>
+<script>
+    // setInterval continue print hote rahega
+    const toStop = setInterval(() => {
+        console.log('Arfat'+Date.now());
+    },1000) 
+
+    // to clearInterval now on click to stop
+    document.getElementById('but').addEventListener('click', (e) => {
+        clearInterval(toStop)
+    })
+
+    // setinterval me third parameter bhi hota hai
+    const toPrint = (str) =>{
+        console.log(str+Date.now());
+    }
+
+    setInterval(toPrint,1000,'Shaikh')
+    
+</script>
+</html>
