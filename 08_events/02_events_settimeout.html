@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set and time</title>
+</head>
+<body>
+    <h2>SetTime Out And Set Interval</h2>
+    <button id="but">stop</button>
+    <a href="https://ubiquitous-space-lamp-699ppqg99jrpfrqgq-5500.app.github.dev/08_events/01_eventsbasic.html" id="google">Google</a>
+</body>
+<script>
+    // setTime out jo hai koi cheez itne mintues ke baad print hogi
+
+    // setTimeout( () =>{
+    //     alert('Arfat')
+    // }, 2000)
+
+    // setTimeout(handler , second)
+    // handler ko function ka reference bolte hai
+    // now passing through handler
+
+    // const passingFun = function(){
+    //     alert('Arfat')
+    // }
+
+    // setTimeout(passingFun,2000)
+
+    // function passing(){
+    //     alert('Arfat')
+    // }
+    // setTimeout(passing,2000)
+
+    // now chaning the text
+    const changeText = () => {
+        alert("Get 200% Discount!")
+        document.querySelector('h2').innerHTML = 'Arfat Shaikh!'
+    }
+    const toPass=setTimeout( changeText, 2000)
+
+    // clearTimeout wo hai ki setTime out ko break karna hai
+
+    //  button click karne par alert and chane text nahi hoga
+    document.getElementById('but').addEventListener('click', (e) => {
+        console.log("Stoped");
+        //clearTimeout(changeText) wrong
+        clearTimeout(toPass)
+    })
+
+    
+
+</script>
+</html>
